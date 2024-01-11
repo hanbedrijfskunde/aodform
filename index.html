@@ -419,9 +419,7 @@
       >
         <h2>Beoordelingsformulier</h2>
 
-        <p>
-          Tekst
-        </p>
+        <p>Tekst</p>
         <hr />
         <div class="container py-5">
           <form
@@ -445,155 +443,87 @@
               />
             </div>
 
-            <!-- Voorwaardelijke Criteria -->
-            <fieldset
-              class="mb-3"
-              id="voorwaardelijkeCriteria"
-            >
-              <legend>Voorwaardelijke Criteria</legend>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="nederlands"
-                />
-                <label
-                  class="form-check-label"
-                  for="nederlands"
-                  >Correct Nederlands geschreven</label
-                >
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="bronvermelding"
-                />
-                <label
-                  class="form-check-label"
-                  for="bronvermelding"
-                  >Juiste bronvermelding volgens APA-normen</label
-                >
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="inhoudsopgave"
-                />
-                <label
-                  class="form-check-label"
-                  for="inhoudsopgave"
-                  >Correcte opbouw van het document</label
-                >
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="opbouw"
-                />
-                <label
-                  class="form-check-label"
-                  for="opbouw"
-                  >Inhoudsopgave aanwezig.</label
-                >
-              </div>
-              <textarea
-                class="form-control mt-2 textarea-autosize"
-                id="organisationalJourneyComments"
-                rows="12"
-              >
-Voorwaardelijke criteria:
-- Correct Nederlands geschreven;
-- Juiste bronvermelding volgens APA-normen;
-- Correcte opbouw van het document;
-- Inhoudsopgave aanwezig.
-                        </textarea
-              >
-            </fieldset>
-
-            <!-- Inhoudelijke Criteria -->
+            <!-- Beoordelingsvelden -->
             <fieldset
               class="mb-3 breakPage"
-              id="inhoudelijkeCriteria"
+              id="beoordelingscriteria"
             >
-              <legend>Inhoudelijke Criteria</legend>
+              <legend>Beoordelingscriteria</legend>
               <div class="mb-3">
                 <label
-                  for="organisationalJourney"
+                  for="opdrachtBeschrijving"
                   class="form-label"
-                  >Ontwerp Organisational Journey</label
+                  >Opdrachtbeschrijving</label
                 >
                 <div>
                   <!-- Radio buttons for grading from 0 to 10 -->
                   <div>
-                    Grade:
+                    Kwaliteit van de opdrachtbeschrijving:
                     <span>
                       &nbsp;0
                       <input
                         type="radio"
-                        name="organisationalJourney"
+                        name="opdrachtBeschrijving"
                         value="0"
                       />
                       &nbsp;1
                       <input
                         type="radio"
-                        name="organisationalJourney"
+                        name="opdrachtBeschrijving"
                         value="1"
                       />
                       &nbsp;2
                       <input
                         type="radio"
-                        name="organisationalJourney"
+                        name="opdrachtBeschrijving"
                         value="2"
                       />
                       &nbsp;3
                       <input
                         type="radio"
-                        name="organisationalJourney"
+                        name="opdrachtBeschrijving"
                         value="3"
                       />
                       &nbsp;4
                       <input
                         type="radio"
-                        name="organisationalJourney"
+                        name="opdrachtBeschrijving"
                         value="4"
                       />
                       &nbsp;5
                       <input
                         type="radio"
-                        name="organisationalJourney"
+                        name="opdrachtBeschrijving"
                         value="5"
                       />
                       &nbsp;6
                       <input
                         type="radio"
-                        name="organisationalJourney"
+                        name="opdrachtBeschrijving"
                         value="6"
                       />
                       &nbsp;7
                       <input
                         type="radio"
-                        name="organisationalJourney"
+                        name="opdrachtBeschrijving"
                         value="7"
                       />
                       &nbsp;8
                       <input
                         type="radio"
-                        name="organisationalJourney"
+                        name="opdrachtBeschrijving"
                         value="8"
                       />
                       &nbsp;9
                       <input
                         type="radio"
-                        name="organisationalJourney"
+                        name="opdrachtBeschrijving"
                         value="9"
                       />
                       &nbsp;10
                       <input
                         type="radio"
-                        name="organisationalJourney"
+                        name="opdrachtBeschrijving"
                         value="10"
                       />
                     </span>
@@ -601,97 +531,88 @@ Voorwaardelijke criteria:
                 </div>
                 <textarea
                   class="form-control mt-2 textarea-autosize"
-                  id="organisationalJourneyComments"
+                  id="opdrachtBeschrijvingComments"
                   rows="40"
                 >
-  De Organisational journey maakt op een beeldende en overtuigende manier duidelijk:
-  - Hoe het nieuwe interne model van de datagedreven organisatie er uit zou kunnen zien in de toekomst;
-  - Wat de achterliggende waarden, aannames en keuzes zijn en hoe deze in lijn zijn met de strategische doelen van de organisatie;
-  - Wat de toegevoegde waarde van data, analytics en research is voor de organisatie;
-  - Welke mogelijkheden en toepassingen van technologie geschikt zijn voor datagedreven werken in de context van de organisatie;
-  - Hoe de organisatie een start met de transformatie kan maken van de huidige situatie naar de gewenste situatie in een tijdshorizon van een jaar;
-  - Op welke wijze medewerkers/team kunnen worden meegenomen in de omslag naar datagedreven werken (op de aspecten cultuur, leiderschap, alignment en samenwerking);
-  - Wat doelstellingen zijn en welke interventies er plaats moeten vinden om de gewenste situatie te bereiken inclusief uitdagende milestones en planning;
-  - Wat kritische succesfactoren en kpi’s zijn en hoe er geleerd kan worden van tussentijdse metingen (empirische cyclus);
-  - Welke ethische vraagstukken een rol spelen (denk aan privacy, autonomie, vrijheid, etc.) en hoe deze zich verhouden tot de waarden van de organisatie.
+Plak hierin de tekst van de opdracht. En voeg eventueel eigen commentaar toe.
               </textarea
                 >
               </div>
               <div class="mb-3 breakPage">
                 <label
-                  for="logboek"
+                  for="uitvoering"
                   class="form-label"
-                  >Logboek met onderbouwing van stappen en keuzes</label
+                  >Uitvoering</label
                 >
                 <div>
                   <!-- Radio buttons for grading from 0 to 10 -->
                   <div>
-                    Grade:
+                    Kwaliteit van de uitvoering:
                     <span>
                       &nbsp;0
                       <input
                         type="radio"
-                        name="logboek"
+                        name="uitvoering"
                         value="0"
                       />
                       &nbsp;1
                       <input
                         type="radio"
-                        name="logboek"
+                        name="uitvoering"
                         value="1"
                       />
                       &nbsp;2
                       <input
                         type="radio"
-                        name="logboek"
+                        name="uitvoering"
                         value="2"
                       />
                       &nbsp;3
                       <input
                         type="radio"
-                        name="logboek"
+                        name="uitvoering"
                         value="3"
                       />
                       &nbsp;4
                       <input
                         type="radio"
-                        name="logboek"
+                        name="uitvoering"
                         value="4"
                       />
                       &nbsp;5
                       <input
                         type="radio"
-                        name="logboek"
+                        name="uitvoering"
                         value="5"
                       />
                       &nbsp;6
                       <input
                         type="radio"
-                        name="logboek"
+                        name="uitvoering"
                         value="6"
                       />
                       &nbsp;7
                       <input
                         type="radio"
-                        name="logboek"
+                        name="uitvoering"
                         value="7"
                       />
                       &nbsp;8
                       <input
                         type="radio"
-                        name="logboek"
+                        name="uitvoering"
                         value="8"
                       />
                       &nbsp;9
                       <input
                         type="radio"
-                        name="logboek"
+                        name="uitvoering"
                         value="9"
                       />
                       &nbsp;10
                       <input
                         type="radio"
-                        name="logboek"
+                        name="uitvoering"
                         value="10"
                       />
                     </span>
@@ -699,132 +620,25 @@ Voorwaardelijke criteria:
                 </div>
                 <textarea
                   class="form-control mt-2 textarea-autosize"
-                  id="logboekComments"
+                  id="uitvoeringComments"
                   rows="40"
                 >
-Het logboek bevat een consistente onderbouwing van de stappen en keuzes die gemaakt zijn om te komen tot de organisational journey. Het logboek onderbouwt:
-- Op welke wijze de strategische koers van de organisatie onderzocht is volgens de empirische cyclus (iteratie 1)
-- Op welke wijze de huidige status van de organisatie met betrekking tot data gedreven organiseren onderzocht is volgens de empirische cyclus (iteratie 2)
-- Welk wetenschappelijk gevalideerd model gebruikt is om een nulmeting te doen vanuit verschillende bedrijfskundige perspectieven en waarom juist dit model (iteratie 2);
-- Hoe de resultaten van iteratie 1 en 2 zijn meegenomen in het ontwerp van de organisational journey (iteratie 3);
-- Op welke wijze waarop de inzichten vanuit (wetenschappelijke) literatuur in het ontwerp van de organisational journey verwerkt zijn;
-- Op welke wijze stakeholders in de organisatie zijn betrokken bij het ontwerp van de organisational journey.
-- Op welke wijze feedback van de interne organisatie en intervisiegroep is verwerkt in de definitieve versie van de organisational journey.
-              </textarea
-                >
-              </div>
-              <div class="mb-3 breakPage">
-                <label
-                  for="verantwoordingsdocument"
-                  class="form-label"
-                  >Verantwoordingsdocument en reflectie</label
-                >
-                <div>
-                  <!-- Radio buttons for grading from 0 to 10 -->
-                  <div>
-                    Grade:
-                    <span>
-                      &nbsp;0
-                      <input
-                        type="radio"
-                        name="verantwoordingsdocument"
-                        value="0"
-                      />
-                      &nbsp;1
-                      <input
-                        type="radio"
-                        name="verantwoordingsdocument"
-                        value="1"
-                      />
-                      &nbsp;2
-                      <input
-                        type="radio"
-                        name="verantwoordingsdocument"
-                        value="2"
-                      />
-                      &nbsp;3
-                      <input
-                        type="radio"
-                        name="verantwoordingsdocument"
-                        value="3"
-                      />
-                      &nbsp;4
-                      <input
-                        type="radio"
-                        name="verantwoordingsdocument"
-                        value="4"
-                      />
-                      &nbsp;5
-                      <input
-                        type="radio"
-                        name="verantwoordingsdocument"
-                        value="5"
-                      />
-                      &nbsp;6
-                      <input
-                        type="radio"
-                        name="verantwoordingsdocument"
-                        value="6"
-                      />
-                      &nbsp;7
-                      <input
-                        type="radio"
-                        name="verantwoordingsdocument"
-                        value="7"
-                      />
-                      &nbsp;8
-                      <input
-                        type="radio"
-                        name="verantwoordingsdocument"
-                        value="8"
-                      />
-                      &nbsp;9
-                      <input
-                        type="radio"
-                        name="verantwoordingsdocument"
-                        value="9"
-                      />
-                      &nbsp;10
-                      <input
-                        type="radio"
-                        name="verantwoordingsdocument"
-                        value="10"
-                      />
-                    </span>
-                  </div>
-                </div>
-                <textarea
-                  class="form-control mt-2 textarea-autosize"
-                  id="verantwoordingsdocumentComments"
-                  rows="20"
-                >
-Het verantwoordingsdocument laat zien dat de professional met een kritische terugblik kan terugkijken naar zijn bijdrage in het proces en de uitkomsten;
-- Het verslag geeft de lezer op inspirerende wijze inzicht in persoonlijke ervaringen en vernieuwde inzichten;
-- Er is een grondige/verrassende/inspirerende beschrijving gegeven van de rol van bedrijfskundige binnen en buiten de organisatie als het gaat om het inrichten en besturen van data gedreven organisaties.
-- Gaat hierbij ook in op morele waarden en ethische overwegingen bij die een rol spelen bij datagedreven organiseren.
+Beschrijf de kwaliteit van uitvoering en in hoeverre je deze vindt aansluiten bij het vereiste niveau. Elementen die je kunt bespreken:
+- Multidisciplinaire Analyse
+- Theoretische Onderbouwing
+- Ontwikkelen van Meetinstrumenten
+- Gegevensverzameling en -analyse
+- Integrale Oplossing Ontwerpen
+- Toepassing van Nieuwe Technologieën en Methoden
+- Impactanalyse en Kosteneffectiviteit
+- Adviesrapport met Strategische en Praktische Aanbevelingen
+- Stakeholder Engagement en Cultuurverandering
+- Reflectie op Persoonlijke Inbreng
               </textarea
                 >
               </div>
             </fieldset>
-
-            <button
-              type="submit"
-              class="btn btn-primary breakPage"
-            >
-              Bereken Cijfer
-            </button>
-            <!-- Display the result -->
-            <div
-              class="mt-4"
-              id="result"
-            ></div>
           </form>
-
-          <!-- Display the result -->
-          <div
-            class="mt-4"
-            id="result"
-          ></div>
 
           <!-- Button for saving as PDF -->
           <button
@@ -838,75 +652,14 @@ Het verantwoordingsdocument laat zien dat de professional met een kritische teru
       </section>
     </div>
     <script>
-      function calculateGrade(event) {
-        event.preventDefault();
-
-        // Check if all voorwaardelijke criteria are met
-        const criteriaMet =
-          document.getElementById("nederlands").checked &&
-          document.getElementById("bronvermelding").checked &&
-          document.getElementById("inhoudsopgave").checked &&
-          document.getElementById("opbouw").checked;
-
-        if (!criteriaMet) {
-          document.getElementById("result").innerHTML =
-            "Er is niet voldaan aan de voorwaardelijke criteria";
-          return;
-        }
-
-        // Retrieve scores
-        // Retrieve score for organisationalJourney
-        const organisationalJourneyRadios = document.querySelectorAll(
-          'input[name="organisationalJourney"]:checked'
-        );
-        const organisationalJourney =
-          organisationalJourneyRadios.length > 0
-            ? parseFloat(organisationalJourneyRadios[0].value)
-            : 0;
-        const logboekRadios = document.querySelectorAll(
-          'input[name="logboek"]:checked'
-        );
-        const logboek =
-          logboekRadios.length > 0 ? parseFloat(logboekRadios[0].value) : 0;
-        const verantwoordingsdocumentRadios = document.querySelectorAll(
-          'input[name="verantwoordingsdocument"]:checked'
-        );
-        const verantwoordingsdocument =
-          verantwoordingsdocumentRadios.length > 0
-            ? parseFloat(verantwoordingsdocumentRadios[0].value)
-            : 0;
-
-        // Calculate weighted grade
-        let grade = 0;
-        grade += organisationalJourney * 40;
-        grade += logboek * 40;
-        grade += verantwoordingsdocument * 20;
-
-        grade /= 100; // Divide by total weightings
-
-        // Display the result
-        const resultDiv = document.getElementById("result");
-        const studentName = document.getElementById("studentName").value;
-        resultDiv.innerHTML = `<strong>${studentName}'s Cijfer:</strong> ${grade.toFixed(
-          1
-        )}`;
-      }
-    </script>
-    <script>
       function saveAsPdf() {
         const studentName = document.getElementById("studentName").value;
-        const finalGrade = document.getElementById("result").textContent;
         const pdfContent = document.createElement("div");
 
         // Add the student's name to the PDF content
         const nameElement = document.createElement("h3");
         nameElement.textContent = "Student Name: " + studentName;
         pdfContent.appendChild(nameElement);
-
-        // Add the final grade to the PDF content
-        const gradeElement = document.createElement("h4");
-        gradeElement.innerHTML = finalGrade;
-        pdfContent.appendChild(gradeElement);
 
         // Process each fieldset
         const fieldsets = document.querySelectorAll(
@@ -954,7 +707,7 @@ Het verantwoordingsdocument laat zien dat de professional met een kritische teru
               const commentElement = document.createElement("p");
 
               gradeElement.textContent =
-                label.textContent + " (Cijfer: " + grade + ")";
+                label.textContent + " (Score: " + grade + ")";
               commentElement.innerHTML = textarea.value.replace(/\n/g, "<br>"); // Replace newlines with HTML line breaks
 
               textElement.appendChild(gradeElement);
